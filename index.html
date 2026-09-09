@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhandara.com | अपने शहर के भंडारे खोजें</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">Bhandaradekho<span>.com</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#bhandare">Bhandare</a>
+        <a href="#about">About</a>
+    </nav>
+</header>
+
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">🙏 सेवा • प्रसाद • जानकारी</p>
+
+        <h1>
+            आपके शहर में<br>
+            <span>कहाँ-कहाँ भंडारा?</span>
+        </h1>
+
+        <p>
+            अपने शहर में होने वाले भंडारों की जानकारी पाएं।
+            पहले शहर में कुल भंडारों की संख्या देखें और
+            केवल ₹11 में पूरी location unlock करें।
+        </p>
+
+
+        <div class="search-box">
+
+            <select id="citySelect">
+                <option value="">अपना शहर चुनें</option>
+                <option value="varanasi">Varanasi</option>
+                <option value="ghazipur">Ghazipur</option>
+                <option value="lucknow">Lucknow</option>
+                <option value="prayagraj">Prayagraj</option>
+            </select>
+
+            <button onclick="searchBhandara()">
+                भंडारे खोजें
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="bhandare" class="results">
+
+    <div class="section-heading">
+
+        <p>LIVE CITY INFORMATION</p>
+
+        <h2 id="resultTitle">
+            अपना शहर चुनें
+        </h2>
+
+    </div>
+
+
+    <div id="cityStats" class="stats hidden">
+
+        <div class="stat-card">
+            <strong id="todayCount">0</strong>
+            <span>आज के भंडारे</span>
+        </div>
+
+        <div class="stat-card">
+            <strong id="weekCount">0</strong>
+            <span>इस सप्ताह</span>
+        </div>
+
+        <div class="stat-card">
+            <strong id="totalCount">0</strong>
+            <span>कुल आयोजन</span>
+        </div>
+
+    </div>
+
+
+    <div id="bhandaraList" class="bhandara-list"></div>
+
+</section>
+
+
+<section id="about" class="about">
+
+    <h2>Bhandara.com कैसे काम करता है?</h2>
+
+    <div class="steps">
+
+        <div>
+            <span>01</span>
+            <h3>City Select करें</h3>
+            <p>अपना शहर चुनकर आसपास होने वाले आयोजनों की संख्या देखें।</p>
+        </div>
+
+        <div>
+            <span>02</span>
+            <h3>₹11 Access</h3>
+            <p>Exact location देखने के लिए केवल ₹11 का access लें।</p>
+        </div>
+
+        <div>
+            <span>03</span>
+            <h3>Location देखें</h3>
+            <p>Payment के बाद address और map direction प्राप्त करें।</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+    <p>© 2026 Bhandara.com — सेवा की जानकारी एक जगह</p>
+</footer>
+
+
+<!-- Payment Modal -->
+
+<div id="paymentModal" class="modal">
+
+    <div class="modal-box">
+
+        <button class="close" onclick="closePayment()">×</button>
+
+        <div class="lock-icon">🔐</div>
+
+        <h2>Location Unlock करें</h2>
+
+        <p id="paymentBhandaraName"></p>
+
+        <div class="price">
+            ₹11
+        </div>
+
+        <p class="payment-note">
+            Payment के बाद exact location दिखाई जाएगी।
+        </p>
+
+        <button class="pay-button" onclick="demoPayment()">
+            ₹11 Pay करके Unlock करें
+        </button>
+
+        <small>
+            Demo payment mode
+        </small>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+</head><!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bhandara.com</title>
+
+    <!-- CSS File Link (head tag ke andar) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Aapka Baaki HTML Code Yahan Hoga -->
+
+    <!-- JS File Link (body tag khatam hone se theek pehle) -->
+    <script src="script.js"></script>
+</body>
+</html></head> 

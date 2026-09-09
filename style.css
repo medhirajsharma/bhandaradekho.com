@@ -1,0 +1,527 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf0;
+    color: #222;
+}
+
+
+/* HEADER */
+
+.header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    background: #ffffff;
+
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    color: #111;
+}
+
+.logo span {
+    color: #f59e0b;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 570px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 7%;
+
+    background:
+        radial-gradient(circle at 80% 30%, #ffd166 0, transparent 25%),
+        linear-gradient(135deg, #fff7df, #fff);
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.small-title {
+    color: #d97706;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(42px, 6vw, 76px);
+    line-height: 1.05;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #f59e0b;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+
+/* SEARCH */
+
+.search-box {
+    margin-top: 35px;
+
+    display: flex;
+
+    max-width: 650px;
+
+    background: white;
+
+    padding: 8px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.search-box select {
+    flex: 1;
+
+    border: none;
+
+    padding: 16px;
+
+    font-size: 16px;
+
+    outline: none;
+
+    background: white;
+}
+
+.search-box button {
+    border: none;
+
+    background: #f59e0b;
+
+    color: white;
+
+    padding: 0 28px;
+
+    border-radius: 10px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    font-size: 16px;
+}
+
+.search-box button:hover {
+    background: #d97706;
+}
+
+
+/* RESULTS */
+
+.results {
+    padding: 80px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    color: #d97706;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+
+/* STATS */
+
+.stats {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+    max-width: 900px;
+
+    margin: auto auto 50px;
+}
+
+.stat-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.stat-card strong {
+    display: block;
+
+    font-size: 42px;
+
+    color: #f59e0b;
+}
+
+.stat-card span {
+    color: #666;
+}
+
+
+/* BHANDARA CARDS */
+
+.bhandara-list {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 25px;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+.bhandara-card {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+    position: relative;
+}
+
+.date {
+    color: #d97706;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+.bhandara-card h3 {
+    margin-bottom: 10px;
+
+    font-size: 22px;
+}
+
+.time {
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+.location {
+    padding: 15px;
+
+    background: #f8f8f8;
+
+    border-radius: 10px;
+
+    margin-bottom: 15px;
+}
+
+.locked {
+    filter: blur(5px);
+
+    user-select: none;
+}
+
+.unlock-button {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #111;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.unlock-button:hover {
+    background: #333;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 80px 7%;
+
+    background: #111;
+
+    color: white;
+
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 40px;
+
+    margin-bottom: 45px;
+}
+
+.steps {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.steps div {
+    padding: 30px;
+
+    border: 1px solid #444;
+
+    border-radius: 15px;
+}
+
+.steps span {
+    color: #f59e0b;
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+.steps h3 {
+    margin: 15px 0;
+}
+
+.steps p {
+    color: #bbb;
+
+    line-height: 1.6;
+}
+
+
+/* MODAL */
+
+.modal {
+    display: none;
+
+    position: fixed;
+
+    inset: 0;
+
+    background: rgba(0,0,0,0.7);
+
+    z-index: 500;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px;
+}
+
+.modal-box {
+    width: 100%;
+
+    max-width: 420px;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    position: relative;
+}
+
+.close {
+    position: absolute;
+
+    right: 18px;
+
+    top: 15px;
+
+    border: none;
+
+    background: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+}
+
+.lock-icon {
+    font-size: 45px;
+
+    margin-bottom: 15px;
+}
+
+.modal-box h2 {
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 55px;
+
+    font-weight: bold;
+
+    color: #f59e0b;
+
+    margin: 15px;
+}
+
+.payment-note {
+    color: #666;
+
+    margin-bottom: 20px;
+}
+
+.pay-button {
+    width: 100%;
+
+    padding: 16px;
+
+    background: #f59e0b;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.modal-box small {
+    display: block;
+
+    margin-top: 12px;
+
+    color: #999;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 30px;
+
+    text-align: center;
+
+    color: #777;
+
+    background: white;
+}
+
+
+/* HELPERS */
+
+.hidden {
+    display: none;
+}
+
+
+/* MOBILE */
+
+@media(max-width: 700px) {
+
+    .header {
+        padding: 0 20px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .results {
+        padding: 60px 20px;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .search-box button {
+        padding: 15px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .steps {
+        grid-template-columns: 1fr;
+    }
+
+    .about {
+        padding: 60px 20px;
+    }
+
+}
